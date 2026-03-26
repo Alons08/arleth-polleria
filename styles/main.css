@@ -1232,3 +1232,8 @@ body {
         opacity: 1;
     }
 }
+
+/* TikTok icon blanco en el footer */
+.social-icons a.tiktok-icon {
+    color: #fff !important;
+}
