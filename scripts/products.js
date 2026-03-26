@@ -747,7 +747,7 @@ function setupProductEvents() {
 }
 
 function initProducts() {
-    renderProducts('platos');
+    renderProducts('a-la-brasa');
     setupFilters();
     setupProductEvents();
 }
