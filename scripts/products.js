@@ -115,7 +115,7 @@ const products = [
     {
         id: 30,
         name: "Mega Combo 1",
-        category: "mega-combo-1",
+        category: "mega-combos",
         price: 82.00,
         description: "+ 1 Pollo + 1/2 pollo solo + papa amarilla familiar + ensalada + cremas + gaseosa 1.5Lt Inka Cola",
         image: "./images/menu/mega-combo-1.jpg",
@@ -124,7 +124,7 @@ const products = [
     {
         id: 31,
         name: "Mega Combo 2",
-        category: "mega-combo-1",
+        category: "mega-combos",
         price: 74.00,
         description: "+ 1 Pollo + 1 salchibrasa + papas amarilla + ensalada + cremas + gaseosa 1.5Lt Pepsi",
         image: "./images/menu/mega-combo-2.jpg",
@@ -133,7 +133,7 @@ const products = [
     {
         id: 32,
         name: "Super Monstruo Familiar",
-        category: "mega-combo-1",
+        category: "mega-combos",
         price: 75.00,
         description: "+ 1 Pollo entero + 1/4 pollo gratis solo + chaufa + papas amarilla + ensalada + cremas + gaseosa 1.5Lt Inka Cola",
         image: "./images/menu/super-monstruo-familiar.jpg",
@@ -142,7 +142,7 @@ const products = [
     {
         id: 33,
         name: "Para 2 personas",
-        category: "mega-combo-1",
+        category: "mega-combos",
         price: 38.00,
         description: "+ 1/2 pollo + chaufa + papas amarilla + ensalada + 1/2 jarra chicha o maracuyá",
         image: "./images/menu/para-2-personas.jpg",
@@ -640,7 +640,7 @@ function getProductPrice(product) {
     return product.price;
 }
 
-function renderProducts(category = 'comidas') {
+function renderProducts(category = 'a-la-brasa') {
     const menuItemsContainer = document.getElementById('menu-items');
     if (!menuItemsContainer) return;
 
