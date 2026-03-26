@@ -1,325 +1,630 @@
 // Array completo de productos
 const products = [
-    // PLATOS
+    // A LA BRASA
     {
         id: 1,
-        name: "1/4 Pollo a la Brasa",
-        category: "platos",
-        price: 15.00,
-        specialPrice: { days: [3, 6], price: 12.00 }, // Miércoles (3) y Sábado (6)
-        description: "1/4 de pollo a la brasa con papas, cremas y ensalada.",
-        image: "./images/menu/brasa-cuarto.jpg",
+        name: "Pollo entero",
+        category: "a-la-brasa",
+        price: 58.00,
+        description: "Papas clásicas + ensalada + cremas",
+        image: "./images/menu/pollo-entero.jpg",
         available: true
     },
     {
-        id: 102,
-        name: "1/2 Pollo a la Brasa",
-        category: "platos",
-        price: 30.00,
-        specialPrice: { days: [3, 6], price: 24.00 }, // Miércoles (3) y Sábado (6)
-        description: "1/2 pollo a la brasa con papas, cremas y ensalada.",
+        id: 2,
+        name: "1/2 Pollo",
+        category: "a-la-brasa",
+        price: 32.00,
+        description: "Papas clásicas + ensalada + cremas",
         image: "./images/menu/medio-pollo.jpg",
         available: true
     },
     {
         id: 3,
-        name: "Pollo a la Brasa Entero",
-        category: "platos",
-        price: 60.00,
-        specialPrice: { days: [3, 6], price: 48.00 }, // Miércoles (3) y Sábado (6)
-        description: "Pollo entero con papa, cremas, ensalada, porción de chaufa y gaseosa Pepsi 1.5L.",
-        image: "./images/menu/pollo-entero.jpg",
-        available: true
-    },
-    {
-        id: 5,
-        name: "Broaster",
-        category: "platos",
-        price: 12.00,
-        description: "Porción de pollo broaster con papas.",
-        image: "./images/menu/broaster-12.jpg",
-        available: true
-    },
-    {
-        id: 104,
-        name: "Broaster",
-        category: "platos",
+        name: "1/4 Pollo",
+        category: "a-la-brasa",
         price: 18.00,
-        description: "Porción de pollo, chaufa, papas, ensalada y cremas.",
-        image: "./images/menu/broaster-18.jpg",
+        description: "Papas clásicas + ensalada + cremas",
+        image: "./images/menu/brasa-cuarto.jpg",
         available: true
     },
-    {
-        id: 6,
-        name: "Mostrito",
-        category: "platos",
-        price: 13.00,
-        description: "Porción de pollo broaster con chaufa y papas.",
-        image: "./images/menu/mostritoo.jpg",
-        available: true
-    },
-    {
-        id: 7,
-        name: "Hamburguesa de Carne",
-        category: "platos",
-        price: 5.00,
-        description: "Hamburguesa de carne con papas.",
-        image: "./images/menu/hamburguesa-carne.jpg",
-        available: true
-    },
-    {
-        id: 8,
-        name: "Hamburguesa Broaster",
-        category: "platos",
-        price: 8.00,
-        description: "Hamburguesa de pollo broaster con papas.",
-        image: "./images/menu/hamburguesa-broaster.jpg",
-        available: true
-    },
-    {
-        id: 9,
-        name: "Caldo de Gallina",
-        category: "platos",
-        price: 10.00,
-        description: "Caldo de gallina tradicional.",
-        image: "./images/menu/caldo-gallina.jpg",
-        available: true
-    },
-    {
-        id: 100,
-        name: "Brasa Mostrito",
-        category: "platos",
-        price: 16.00,
-        specialPrice: { days: [3, 6], price: 13.00 }, // Miércoles (3) y Sábado (6)
-        description: "Brasa mostrito: pollo a la brasa con chaufa y papas.",
-        image: "./images/menu/brasa-mostrito.jpg",
-        available: true
-    },
-    {
-        id: 101,
-        name: "Salchipapa",
-        category: "platos",
-        price: 10.00,
-        description: "Salchipapa tradicional.",
-        image: "./images/menu/salchipapa.jpg",
-        available: true
-    },
-    {
-        id: 101,
-        name: "Salchibrasa",
-        category: "platos",
-        price: 18.00,
-        description: "Salchibrasa tradicional.",
-        image: "./images/menu/salchibrasa.jpg",
-        available: true
-    },
+    // MOSTROS
     {
         id: 10,
-        name: "Barco Meche",
-        category: "platos",
-        price: 100.00,
-        description: "1 Pollo entero + 4 porciones broaster + salchipapa + 2 hamburguesas + 1 jarra chicha + 2 porciones de chaufa + cremas + ensalada + chorizo + papa.",
-        image: "./images/menu/combo-barco.jpg",
+        name: "Mostrazo 1/4 Pollo",
+        category: "mostros",
+        price: 20.00,
+        description: "+ papas + arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
+        image: "./images/menu/mostrazo-cuarto.jpg",
         available: true
     },
     {
         id: 11,
-        name: "Combo Broaster",
-        category: "platos",
-        price: 50.00,
-        description: "4 piezas de broaster, papa, cremas, ensalada, porción de chaufa y gaseosa Pepsi 1.5L.",
-        image: "./images/menu/combo-broaster.jpg",
+        name: "Mostrito 1/8 Pollo",
+        category: "mostros",
+        price: 13.00,
+        description: "+ papas + arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
+        image: "./images/menu/mostrito-octavo.jpg",
         available: true
     },
-    // BEBIDAS
+    {
+        id: 12,
+        name: "Chaufa con Pollo 1/4",
+        category: "mostros",
+        price: 16.00,
+        description: "+ arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
+        image: "./images/menu/chaufa-cuarto.jpg",
+        available: true
+    },
+    {
+        id: 13,
+        name: "Chaufa con Pollo 1/8",
+        category: "mostros",
+        price: 13.00,
+        description: "+ arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
+        image: "./images/menu/chaufa-octavo.jpg",
+        available: true
+    },
+    // SALCHIPAPAS
     {
         id: 20,
-        name: "Agua Cielo",
-        category: "bebidas",
-        price: 2.00,
-        description: "Botella de agua Cielo.",
-        image: "./images/menu/agua-mineral.jpg",
+        name: "Salchipapa clásica",
+        category: "salchipapas",
+        price: 8.00,
+        description: "Salchipapa clásica",
+        image: "./images/menu/salchipapa-clasica.jpg",
         available: true
     },
     {
         id: 21,
-        name: "Coca Cola 500ml",
-        category: "bebidas",
-        price: 3.00,
-        description: "Botella de Coca Cola 500ml.",
-        image: "./images/menu/gaseosa-coca-500ml.jpg",
+        name: "Salchipapa a lo pobre",
+        category: "salchipapas",
+        price: 10.00,
+        description: "Salchipapa a lo pobre",
+        image: "./images/menu/salchipapa-pobre.jpg",
         available: true
     },
     {
         id: 22,
-        name: "Inka Kola 500ml",
-        category: "bebidas",
-        price: 3.00,
-        description: "Botella de Inka Kola 500ml.",
-        image: "./images/menu/gaseosa-inka-500ml.jpg",
-        available: true
-    },
-    {
-        id: 22,
-        name: "Pepsi",
-        category: "bebidas",
-        price: 2.00,
-        description: "Botella de Pepsi.",
-        image: "./images/menu/gaseosa-pepsi.jpg",
+        name: "Salchichaufa a lo pobre",
+        category: "salchipapas",
+        price: 13.00,
+        description: "Salchichaufa a lo pobre",
+        image: "./images/menu/salchichaufa-pobre.jpg",
         available: true
     },
     {
         id: 23,
-        name: "Coca Cola 1.5L",
-        category: "bebidas",
-        price: 8.00,
-        description: "Botella de Coca Cola 1.5L.",
-        image: "./images/menu/gaseosa-coca-1-5lt.jpg",
+        name: "Salchibrasa + 1/4 pollo",
+        category: "salchipapas",
+        price: 18.00,
+        description: "Salchibrasa con 1/4 pollo",
+        image: "./images/menu/salchibrasa-cuarto.jpg",
         available: true
     },
     {
         id: 24,
-        name: "Inka Kola 1.5L",
-        category: "bebidas",
-        price: 8.00,
-        description: "Botella de Inka Kola 1.5L.",
-        image: "./images/menu/gaseosa-inca-1-5lt.jpg",
+        name: "Salchibrasa + 1/8 pollo",
+        category: "salchipapas",
+        price: 13.00,
+        description: "Salchibrasa con 1/8 pollo",
+        image: "./images/menu/salchibrasa-octavo.jpg",
         available: true
     },
-    {
-        id: 24,
-        name: "Fanta 500ml",
-        category: "bebidas",
-        price: 4.00,
-        description: "Botella de Fanta 500ml.",
-        image: "./images/menu/gaseosa-fanta.jpg",
-        available: true
-    },
-    {
-        id: 25,
-        name: "Gordita Inka",
-        category: "bebidas",
-        price: 5.00,
-        description: "Botella de Inka Kola grande.",
-        image: "./images/menu/gaseosa-gordita.jpg",
-        available: true
-    },
-    {
-        id: 26,
-        name: "Gatorade",
-        category: "bebidas",
-        price: 3.00,
-        description: "Botella de Gatorade.",
-        image: "./images/menu/gatorade.jpg",
-        available: true
-    },
-    {
-        id: 27,
-        name: "Chicha 1L Jarra",
-        category: "bebidas",
-        price: 8.00,
-        description: "Jarra de chicha de 1 litro.",
-        image: "./images/menu/chicha-morada.jpg",
-        available: true
-    },
-    // TRAGOS
+    // MEGA COMBOS
     {
         id: 30,
-        name: "Cerveza Pilsen",
-        category: "tragos",
-        price: 9.00,
-        description: "Botella de cerveza Pilsen.",
-        image: "./images/menu/cerveza-pilsen.jpg",
+        name: "Mega Combo 1",
+        category: "mega-combo-1",
+        price: 82.00,
+        description: "+ 1 Pollo + 1/2 pollo solo + papa amarilla familiar + ensalada + cremas + gaseosa 1.5Lt Inka Cola",
+        image: "./images/menu/mega-combo-1.jpg",
         available: true
     },
     {
         id: 31,
-        name: "Cusqueña Trigo",
-        category: "tragos",
-        price: 9.00,
-        description: "Botella de Cusqueña Trigo.",
-        image: "./images/menu/cerveza-trigo.jpg",
+        name: "Mega Combo 2",
+        category: "mega-combo-1",
+        price: 74.00,
+        description: "+ 1 Pollo + 1 salchibrasa + papas amarilla + ensalada + cremas + gaseosa 1.5Lt Pepsi",
+        image: "./images/menu/mega-combo-2.jpg",
         available: true
     },
     {
         id: 32,
-        name: "Cusqueña Negra",
-        category: "tragos",
-        price: 9.00,
-        description: "Botella de Cusqueña Negra.",
-        image: "./images/menu/cerveza-negra.jpg",
+        name: "Super Monstruo Familiar",
+        category: "mega-combo-1",
+        price: 75.00,
+        description: "+ 1 Pollo entero + 1/4 pollo gratis solo + chaufa + papas amarilla + ensalada + cremas + gaseosa 1.5Lt Inka Cola",
+        image: "./images/menu/super-monstruo-familiar.jpg",
         available: true
     },
     {
         id: 33,
-        name: "Pisco Sour",
-        category: "tragos",
-        price: 28.00,
-        description: "Copa de Pisco Sour.",
-        image: "./images/menu/pisco-sour.jpg",
+        name: "Para 2 personas",
+        category: "mega-combo-1",
+        price: 38.00,
+        description: "+ 1/2 pollo + chaufa + papas amarilla + ensalada + 1/2 jarra chicha o maracuyá",
+        image: "./images/menu/para-2-personas.jpg",
         available: true
     },
-    {
-        id: 34,
-        name: "Vino Tabernero Rosé",
-        category: "tragos",
-        price: 29.00,
-        description: "Botella de vino Tabernero Rosé.",
-        image: "./images/menu/vino-rose.jpg",
-        available: true
-    },
-    {
-        id: 35,
-        name: "Vino Tabernero Borgoña",
-        category: "tragos",
-        price: 29.00,
-        description: "Botella de vino Tabernero Borgoña.",
-        image: "./images/menu/vino-borgona.jpg",
-        available: true
-    },
-    {
-        id: 36,
-        name: "Chilcano 275ml",
-        category: "tragos",
-        price: 11.00,
-        description: "Botella de Chilcano 275ml.",
-        image: "./images/menu/chilcano.jpg",
-        available: true
-    },
-    {
-        id: 37,
-        name: "Whisky Red Label",
-        category: "tragos",
-        price: 60.00,
-        description: "Botella de Whisky Red Label.",
-        image: "./images/menu/whisky-red-label.jpg",
-        available: true
-    },
-    {
-        id: 38,
-        name: "Monster",
-        category: "tragos",
-        price: 10.00,
-        description: "Lata de Monster.",
-        image: "./images/menu/monster.jpg",
-        available: true
-    },
-    {
-        id: 39,
-        name: "Heineken 473ml",
-        category: "tragos",
-        price: 8.00,
-        description: "Lata de Heineken 473ml.",
-        image: "./images/menu/heineken.jpg",
-        available: true
-    },
+    // A LO ARLETH
     {
         id: 40,
-        name: "Red Bull",
-        category: "tragos",
+        name: "Brasa Arleth",
+        category: "a-lo-arleth",
+        price: 21.00,
+        description: "+ 1/4 pollo + arroz blanco + huevo y plátano + papas amarilla + ensalada + cremas + gaseosa personal 500ml Inka Cola",
+        image: "./images/menu/brasa-arleth.jpg",
+        available: true
+    },
+    {
+        id: 41,
+        name: "Pollo Arleth",
+        category: "a-lo-arleth",
+        price: 22.00,
+        description: "+ 1/4 pollo + arroz chaufa + huevo y plátano + papas amarilla + ensalada + cremas + gaseosa personal 500ml Inka Cola",
+        image: "./images/menu/pollo-arleth.jpg",
+        available: true
+    },
+    {
+        id: 42,
+        name: "Salchi Alitas Arleth",
+        category: "a-lo-arleth",
+        price: 15.00,
+        description: "+ papas amarillas + salchicha + 3 alitas + cremas + vaso de chicha",
+        image: "./images/menu/salchi-alitas-arleth.jpg",
+        available: true
+    },
+    // CHAUFAS
+    {
+        id: 50,
+        name: "Chaufa familiar con pollo",
+        category: "chaufas",
+        price: 18.00,
+        description: "Chaufa familiar con pollo",
+        image: "./images/menu/chaufa-familiar-pollo.jpg",
+        available: true
+    },
+    {
+        id: 51,
+        name: "Chaufa de pollo",
+        category: "chaufas",
+        price: 11.00,
+        description: "Chaufa de pollo",
+        image: "./images/menu/chaufa-pollo.jpg",
+        available: true
+    },
+    {
+        id: 52,
+        name: "Chaufa de carne",
+        category: "chaufas",
+        price: 15.00,
+        description: "Chaufa de carne",
+        image: "./images/menu/chaufa-carne.jpg",
+        available: true
+    },
+    {
+        id: 53,
+        name: "Chaufa de chancho",
+        category: "chaufas",
+        price: 14.00,
+        description: "Chaufa de chancho",
+        image: "./images/menu/chaufa-chancho.jpg",
+        available: true
+    },
+    {
+        id: 54,
+        name: "Chaufa con lomo",
+        category: "chaufas",
+        price: 20.00,
+        description: "Chaufa con lomo",
+        image: "./images/menu/chaufa-lomo.jpg",
+        available: true
+    },
+    {
+        id: 55,
+        name: "Chaufa con tortilla",
+        category: "chaufas",
+        price: 17.00,
+        description: "Chaufa con tortilla",
+        image: "./images/menu/chaufa-tortilla.jpg",
+        available: true
+    },
+    {
+        id: 56,
+        name: "Chaufa especial",
+        category: "chaufas",
+        price: 20.00,
+        description: "Chaufa especial",
+        image: "./images/menu/chaufa-especial.jpg",
+        available: true
+    },
+    {
+        id: 57,
+        name: "Chaufa con langostinos",
+        category: "chaufas",
+        price: 20.00,
+        description: "Chaufa con langostinos",
+        image: "./images/menu/chaufa-langostinos.jpg",
+        available: true
+    },
+    // AEROPUERTO
+    {
+        id: 60,
+        name: "Aeropuerto con Pollo",
+        category: "aeropuerto",
+        price: 13.00,
+        description: "Aeropuerto con Pollo",
+        image: "./images/menu/aeropuerto-pollo.jpg",
+        available: true
+    },
+    {
+        id: 61,
+        name: "Aeropuerto con Carne",
+        category: "aeropuerto",
+        price: 16.00,
+        description: "Aeropuerto con Carne",
+        image: "./images/menu/aeropuerto-carne.jpg",
+        available: true
+    },
+    {
+        id: 62,
+        name: "Aeropuerto con Chancho",
+        category: "aeropuerto",
+        price: 16.00,
+        description: "Aeropuerto con Chancho",
+        image: "./images/menu/aeropuerto-chancho.jpg",
+        available: true
+    },
+    {
+        id: 63,
+        name: "Aeropuerto con Langostino",
+        category: "aeropuerto",
+        price: 22.00,
+        description: "Aeropuerto con Langostino",
+        image: "./images/menu/aeropuerto-langostino.jpg",
+        available: true
+    },
+    {
+        id: 64,
+        name: "Aeropuerto Especial",
+        category: "aeropuerto",
+        price: 22.00,
+        description: "Aeropuerto Especial",
+        image: "./images/menu/aeropuerto-especial.jpg",
+        available: true
+    },
+    // SALVAJE
+    {
+        id: 70,
+        name: "Salvaje de Pollo",
+        category: "salvaje",
+        price: 13.00,
+        description: "Salvaje de Pollo",
+        image: "./images/menu/salvaje-pollo.jpg",
+        available: true
+    },
+    {
+        id: 71,
+        name: "Salvaje de Carne",
+        category: "salvaje",
+        price: 16.00,
+        description: "Salvaje de Carne",
+        image: "./images/menu/salvaje-carne.jpg",
+        available: true
+    },
+    {
+        id: 72,
+        name: "Salvaje de Chancho",
+        category: "salvaje",
+        price: 16.00,
+        description: "Salvaje de Chancho",
+        image: "./images/menu/salvaje-chancho.jpg",
+        available: true
+    },
+    {
+        id: 73,
+        name: "Salvaje de Langostino",
+        category: "salvaje",
+        price: 22.00,
+        description: "Salvaje de Langostino",
+        image: "./images/menu/salvaje-langostino.jpg",
+        available: true
+    },
+    {
+        id: 74,
+        name: "Salvaje especial",
+        category: "salvaje",
+        price: 22.00,
+        description: "Salvaje especial",
+        image: "./images/menu/salvaje-especial.jpg",
+        available: true
+    },
+    // COMBINADO
+    {
+        id: 80,
+        name: "Combinado de Pollo",
+        category: "combinado",
+        price: 15.00,
+        description: "Combinado de Pollo",
+        image: "./images/menu/combinado-pollo.jpg",
+        available: true
+    },
+    {
+        id: 81,
+        name: "Combinado de Chancho",
+        category: "combinado",
+        price: 18.00,
+        description: "Combinado de Chancho",
+        image: "./images/menu/combinado-chancho.jpg",
+        available: true
+    },
+    {
+        id: 82,
+        name: "Combinado de Carne",
+        category: "combinado",
+        price: 18.00,
+        description: "Combinado de Carne",
+        image: "./images/menu/combinado-carne.jpg",
+        available: true
+    },
+    {
+        id: 83,
+        name: "Combinado especial",
+        category: "combinado",
+        price: 23.00,
+        description: "Combinado especial",
+        image: "./images/menu/combinado-especial.jpg",
+        available: true
+    },
+    // TALLARIN CHIFA
+    {
+        id: 90,
+        name: "Tallarín con Pollo",
+        category: "tallarin-chifa",
+        price: 13.00,
+        description: "Tallarín con Pollo",
+        image: "./images/menu/tallarin-pollo.jpg",
+        available: true
+    },
+    {
+        id: 91,
+        name: "Tallarín especial",
+        category: "tallarin-chifa",
+        price: 20.00,
+        description: "Tallarín especial",
+        image: "./images/menu/tallarin-especial.jpg",
+        available: true
+    },
+    // LOMOS
+    {
+        id: 100,
+        name: "Lomo saltado de carne",
+        category: "lomos",
+        price: 18.00,
+        description: "Lomo saltado de carne",
+        image: "./images/menu/lomo-carne.jpg",
+        available: true
+    },
+    {
+        id: 101,
+        name: "Lomo saltado de pollo",
+        category: "lomos",
+        price: 16.00,
+        description: "Lomo saltado de pollo",
+        image: "./images/menu/lomo-pollo.jpg",
+        available: true
+    },
+    {
+        id: 102,
+        name: "Lomo + chaufa de carne",
+        category: "lomos",
+        price: 20.00,
+        description: "Lomo + chaufa de carne",
+        image: "./images/menu/lomo-chaufa-carne.jpg",
+        available: true
+    },
+    {
+        id: 103,
+        name: "Tallarín saltado de carne",
+        category: "lomos",
+        price: 18.00,
+        description: "Tallarín saltado de carne",
+        image: "./images/menu/tallarin-saltado-carne.jpg",
+        available: true
+    },
+    {
+        id: 104,
+        name: "Tallarín saltado de pollo",
+        category: "lomos",
+        price: 16.00,
+        description: "Tallarín saltado de pollo",
+        image: "./images/menu/tallarin-saltado-pollo.jpg",
+        available: true
+    },
+    {
+        id: 105,
+        name: "Lomo saltado a lo pobre",
+        category: "lomos",
+        price: 20.00,
+        description: "Lomo saltado a lo pobre",
+        image: "./images/menu/lomo-pobre.jpg",
+        available: true
+    },
+    {
+        id: 106,
+        name: "Lomo saltado con chaufa a lo pobre",
+        category: "lomos",
+        price: 21.00,
+        description: "Lomo saltado con chaufa a lo pobre",
+        image: "./images/menu/lomo-chaufa-pobre.jpg",
+        available: true
+    },
+    // SOPAS
+    {
+        id: 110,
+        name: "Caldo solo",
+        category: "sopas",
+        price: 8.00,
+        description: "Caldo solo",
+        image: "./images/menu/caldo-solo.jpg",
+        available: true
+    },
+    {
+        id: 111,
+        name: "Caldo mediano",
+        category: "sopas",
+        price: 10.00,
+        description: "Caldo mediano",
+        image: "./images/menu/caldo-mediano.jpg",
+        available: true
+    },
+    {
+        id: 112,
+        name: "Caldo grande",
+        category: "sopas",
+        price: 12.00,
+        description: "Caldo grande",
+        image: "./images/menu/caldo-grande.jpg",
+        available: true
+    },
+    {
+        id: 113,
+        name: "Sopa wantán",
+        category: "sopas",
+        price: 10.00,
+        description: "Sopa wantán",
+        image: "./images/menu/sopa-wantan.jpg",
+        available: true
+    },
+    // GASEOSAS
+    {
+        id: 120,
+        name: "Inka personal 300ml",
+        category: "gaseosas",
+        price: 3.00,
+        description: "Inka personal 300ml",
+        image: "./images/menu/inka-300.jpg",
+        available: true
+    },
+    {
+        id: 121,
+        name: "Inka personal 600ml",
+        category: "gaseosas",
+        price: 4.00,
+        description: "Inka personal 600ml",
+        image: "./images/menu/inka-600.jpg",
+        available: true
+    },
+    {
+        id: 122,
+        name: "Inka cola 1Lt.",
+        category: "gaseosas",
+        price: 6.00,
+        description: "Inka cola 1Lt.",
+        image: "./images/menu/inka-1lt.jpg",
+        available: true
+    },
+    {
+        id: 123,
+        name: "Coca cola 1.5 Lt.",
+        category: "gaseosas",
         price: 9.00,
-        description: "Lata de Red Bull.",
-        image: "./images/menu/redbull.jpg",
+        description: "Coca cola 1.5 Lt.",
+        image: "./images/menu/coca-1-5lt.jpg",
+        available: true
+    },
+    {
+        id: 124,
+        name: "Inka Cola 3Lt.",
+        category: "gaseosas",
+        price: 13.00,
+        description: "Inka Cola 3Lt.",
+        image: "./images/menu/inka-3lt.jpg",
+        available: true
+    },
+    {
+        id: 125,
+        name: "Pepsi 1.5Lt.",
+        category: "gaseosas",
+        price: 5.00,
+        description: "Pepsi 1.5Lt.",
+        image: "./images/menu/pepsi-1-5lt.jpg",
+        available: true
+    },
+    // REFRESCOS
+    {
+        id: 130,
+        name: "Chicha Morada 1Lt.",
+        category: "refrescos",
+        price: 10.00,
+        description: "Chicha Morada 1Lt.",
+        image: "./images/menu/chicha-1lt.jpg",
+        available: true
+    },
+    {
+        id: 131,
+        name: "Chicha Morada 1/2Lt.",
+        category: "refrescos",
+        price: 6.00,
+        description: "Chicha Morada 1/2Lt.",
+        image: "./images/menu/chicha-0-5lt.jpg",
+        available: true
+    },
+    {
+        id: 132,
+        name: "Maracuyá 1Lt.",
+        category: "refrescos",
+        price: 10.00,
+        description: "Maracuyá 1Lt.",
+        image: "./images/menu/maracuya-1lt.jpg",
+        available: true
+    },
+    {
+        id: 133,
+        name: "Maracuyá 1/2Lt.",
+        category: "refrescos",
+        price: 6.00,
+        description: "Maracuyá 1/2Lt.",
+        image: "./images/menu/maracuya-0-5lt.jpg",
+        available: true
+    },
+    // CERVEZAS
+    {
+        id: 140,
+        name: "Corona",
+        category: "cervezas",
+        price: 10.00,
+        description: "Corona",
+        image: "./images/menu/corona.jpg",
+        available: true
+    },
+    {
+        id: 141,
+        name: "Cusqueña Trigo",
+        category: "cervezas",
+        price: 10.00,
+        description: "Cusqueña Trigo",
+        image: "./images/menu/cusquena-trigo.jpg",
+        available: true
+    },
+    {
+        id: 142,
+        name: "Cusqueña Dorada",
+        category: "cervezas",
+        price: 10.00,
+        description: "Cusqueña Dorada",
+        image: "./images/menu/cusquena-dorada.jpg",
+        available: true
+    },
+    {
+        id: 143,
+        name: "Cusqueña Negra",
+        category: "cervezas",
+        price: 10.00,
+        description: "Cusqueña Negra",
+        image: "./images/menu/cusquena-negra.jpg",
         available: true
     }
 ];
