@@ -35,7 +35,7 @@ const products = [
         category: "mostros",
         price: 20.00,
         description: "+ papas + arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
-        image: "./images/menu/mostrazo-cuarto.jpg",
+        image: "./images/menu/mostrazo.jpg",
         available: true
     },
     {
@@ -44,7 +44,7 @@ const products = [
         category: "mostros",
         price: 13.00,
         description: "+ papas + arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
-        image: "./images/menu/mostrito-octavo.jpg",
+        image: "./images/menu/mostrazo.jpg",
         available: true
     },
     {
@@ -53,7 +53,7 @@ const products = [
         category: "mostros",
         price: 16.00,
         description: "+ arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
-        image: "./images/menu/chaufa-cuarto.jpg",
+        image: "./images/menu/mostrito.jpg",
         available: true
     },
     {
@@ -62,7 +62,7 @@ const products = [
         category: "mostros",
         price: 13.00,
         description: "+ arroz chaufa + caldito + ensalada + cremas + vaso de chicha",
-        image: "./images/menu/chaufa-octavo.jpg",
+        image: "./images/menu/mostrito.jpg",
         available: true
     },
     // SALCHIPAPAS
@@ -72,7 +72,7 @@ const products = [
         category: "salchipapas",
         price: 8.00,
         description: "Salchipapa clásica",
-        image: "./images/menu/salchipapa-clasica.jpg",
+        image: "./images/menu/salchipapa.jpg",
         available: true
     },
     {
@@ -99,7 +99,7 @@ const products = [
         category: "salchipapas",
         price: 18.00,
         description: "Salchibrasa con 1/4 pollo",
-        image: "./images/menu/salchibrasa-cuarto.jpg",
+        image: "./images/menu/salchibrasa.jpg",
         available: true
     },
     {
@@ -108,7 +108,7 @@ const products = [
         category: "salchipapas",
         price: 13.00,
         description: "Salchibrasa con 1/8 pollo",
-        image: "./images/menu/salchibrasa-octavo.jpg",
+        image: "./images/menu/salchibrasa.jpg",
         available: true
     },
     // MEGA COMBOS
@@ -118,7 +118,7 @@ const products = [
         category: "mega-combos",
         price: 82.00,
         description: "+ 1 Pollo + 1/2 pollo solo + papa amarilla familiar + ensalada + cremas + gaseosa 1.5Lt Inka Cola",
-        image: "./images/menu/mega-combo-1.jpg",
+        image: "./images/menu/mega-combo.jpg",
         available: true
     },
     {
@@ -127,7 +127,7 @@ const products = [
         category: "mega-combos",
         price: 74.00,
         description: "+ 1 Pollo + 1 salchibrasa + papas amarilla + ensalada + cremas + gaseosa 1.5Lt Pepsi",
-        image: "./images/menu/mega-combo-2.jpg",
+        image: "./images/menu/mega-combo.jpg",
         available: true
     },
     {
