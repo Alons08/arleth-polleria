@@ -295,6 +295,7 @@ const products = [
         image: "./images/menu/aeropuerto-especial.jpg",
         available: true
     },
+    /*
     // SALVAJE
     {
         id: 70,
@@ -341,6 +342,7 @@ const products = [
         image: "./images/menu/salvaje-especial.jpg",
         available: true
     },
+    */
     // COMBINADO
     {
         id: 80,
@@ -461,6 +463,7 @@ const products = [
         image: "./images/menu/lomo-chaufa-pobre.jpg",
         available: true
     },
+    /*
     // SOPAS
     {
         id: 110,
@@ -498,6 +501,7 @@ const products = [
         image: "./images/menu/sopa-wantan.jpg",
         available: true
     },
+    */
     // GASEOSAS
     {
         id: 120,
@@ -523,7 +527,7 @@ const products = [
         category: "gaseosas",
         price: 6.00,
         description: "Inka cola 1Lt.",
-        image: "./images/menu/inka-1lt.jpg",
+        image: "./images/menu/gaseosa-inca-1lt.jpg",
         available: true
     },
     {
@@ -541,7 +545,7 @@ const products = [
         category: "gaseosas",
         price: 13.00,
         description: "Inka Cola 3Lt.",
-        image: "./images/menu/inka-3lt.jpg",
+        image: "./images/menu/gaseosa-inca-3lt.jpg",
         available: true
     },
     {
@@ -560,7 +564,7 @@ const products = [
         category: "refrescos",
         price: 10.00,
         description: "Chicha Morada 1Lt.",
-        image: "./images/menu/chicha-1lt.jpg",
+        image: "./images/menu/chicha-morada.jpg",
         available: true
     },
     {
@@ -569,7 +573,7 @@ const products = [
         category: "refrescos",
         price: 6.00,
         description: "Chicha Morada 1/2Lt.",
-        image: "./images/menu/chicha-0-5lt.jpg",
+        image: "./images/menu/chicha-morada-media.jpg",
         available: true
     },
     {
@@ -578,7 +582,7 @@ const products = [
         category: "refrescos",
         price: 10.00,
         description: "Maracuyá 1Lt.",
-        image: "./images/menu/maracuya-1lt.jpg",
+        image: "./images/menu/maracuya.jpg",
         available: true
     },
     {
@@ -587,7 +591,7 @@ const products = [
         category: "refrescos",
         price: 6.00,
         description: "Maracuyá 1/2Lt.",
-        image: "./images/menu/maracuya-0-5lt.jpg",
+        image: "./images/menu/maracuya-media.jpg",
         available: true
     },
     // CERVEZAS
@@ -606,7 +610,7 @@ const products = [
         category: "cervezas",
         price: 10.00,
         description: "Cusqueña Trigo",
-        image: "./images/menu/cusquena-trigo.jpg",
+        image: "./images/menu/cerveza-trigo.jpg",
         available: true
     },
     {
@@ -624,7 +628,7 @@ const products = [
         category: "cervezas",
         price: 10.00,
         description: "Cusqueña Negra",
-        image: "./images/menu/cusquena-negra.jpg",
+        image: "./images/menu/cerveza-negra.jpg",
         available: true
     }
 ];
